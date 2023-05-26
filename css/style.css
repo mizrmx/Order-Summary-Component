@@ -26,11 +26,18 @@ body
     font-family: 'Red Hat Display';
     background-color: var(--pale-blue);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 p
 {
     font-size: 16px;
+    line-height: 1.6;
+    color: var(--desaturated-blue);
 }
 
 button
@@ -54,14 +61,50 @@ button
 {
     background-color: #FFF;
     margin: 20px;
-    padding: 20px;
+    padding-bottom: 20px;
     border-radius: 5px;
     box-shadow: 3px  3px 3px hsl(228, 45%, 44%), 0.15;
 }
 
-h1
+.container img.hero
+{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.container .pricing
+{
+    width: 90%;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: var(--very-pale-blue);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .pricing article
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .pricing article img  
+{
+    margin-right: 10px;
+}
+
+.container h1
 {
     color: hsl(223, 47%, 23%);
+    margin: 10px 0;
+}
+
+.container p.desc
+{
+    padding: 0 30px;
 }
 
 .btn 
@@ -71,6 +114,8 @@ h1
     border-radius: 10px;
     font-weight: bold;
     font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .btn-change 
@@ -80,7 +125,37 @@ h1
     text-decoration: underline;
 }
 
+.btn-primary
+{
+    background-color: var(--bright-blue);
+    color: #FFF;
+    padding: 10px;
+    margin-bottom: 10px;
+}
 
+.btn-primary:hover, .btn-change:hover
+{
+    opacity: 0.8;
+}
+
+.btn-secondary
+{
+    background-color: transparent;
+    color: var(--desaturated-blue);
+}
+
+.btn-secondary:hover
+{
+    color: hsl(223, 47%, 23%);
+}
+
+.container .buttons
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 @media (min-width: 768px)
 {
@@ -88,6 +163,11 @@ h1
     {
         background: url(../images/pattern-background-desktop.svg) no-repeat center/cover;
         height: 50vh;
+    }
+
+    .container
+    {
+        width: 500px;
     }
 }
 

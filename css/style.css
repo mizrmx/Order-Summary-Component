@@ -23,9 +23,14 @@ img
 
 body
 {
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 16px;
+    font-family: 'Red Hat Display';
     background-color: var(--pale-blue);
+    text-align: center;
+}
+
+p
+{
+    font-size: 16px;
 }
 
 button
@@ -54,7 +59,26 @@ button
     box-shadow: 3px  3px 3px hsl(228, 45%, 44%), 0.15;
 }
 
+h1
+{
+    color: hsl(223, 47%, 23%);
+}
 
+.btn 
+{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn-change 
+{
+    background-color: transparent;
+    color: var(--bright-blue);
+    text-decoration: underline;
+}
 
 
 
